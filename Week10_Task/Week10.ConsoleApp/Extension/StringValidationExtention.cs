@@ -9,7 +9,7 @@ namespace Week10.ConsoleApp
         {
             string email = emailAddress;
             Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
-            Match match = regex.Match(email);
+            Match match =  regex.Match(email);
             if (match.Success)
                 return true;
             else
